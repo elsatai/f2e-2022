@@ -110,13 +110,12 @@ let s2a8 = {
     translateX: 1800,
     opacity: 0,
 }
-
 tl2.add(s2a1).add(s2a2).add(s2a3).add(s2a4).add(s2a5).add(s2a6).add(s2a7).add(s2a8);
 
 
 let scene2 = new ScrollMagic.Scene({
     triggerElement: "#block-two",
-    duration: 1800,
+    duration: 1000,
     triggerHook: 0,
 })
 .on("progress", function (event) {
@@ -124,4 +123,36 @@ let scene2 = new ScrollMagic.Scene({
 })
 .setPin('#block-two')
 .addTo(controller);
+
+let tl3 = anime.timeline({autoplay: false});
+let s3a1 = {
+    targets: '#conversation-05',
+    scale: [
+        {
+            value: [0, 1],
+            duration: 600,
+            easing: 'easeInOutSine'
+        }
+    ],
+}
+let s3a2 = {
+    targets: '#typewriter',
+    width: ['0', '378px'],
+    duration: 1800,
+    delay: 600
+}
+tl3.add(s3a1).add(s3a2);
+
+
+let scene3 = new ScrollMagic.Scene({
+    triggerElement: "#block-three",
+    duration: 1800,
+    triggerHook: 0,
+})
+.on("progress", function (event) {
+    tl3.seek(tl3.duration * event.progress);
+})
+.setPin('#block-three')
+.addTo(controller);
+
 
