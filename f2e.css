@@ -1,0 +1,186 @@
+.clearfix:after{
+    content:'';
+    display:table;
+    clear:both;
+}
+body {
+    background-color: #0D1E2B;
+    color: #F5FFFF;
+}
+
+.logo {
+    float: left;
+    margin-top: 26px;
+    font-family: 'Dela Gothic One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    letter-spacing: 0.04em;
+    line-height: 36px;
+}
+.nav {
+    float: right;
+    margin-top: 26px;
+}
+.nav a {
+    margin: 0 24px;
+    font-family: 'Noto Sans CJK TC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    opacity: 0.6;
+}
+/* 區塊一 + 二 */
+.block-one {
+    text-align: center;
+    height: 1000px;
+    overflow: hidden;
+}
+.block-one h1 {
+    font-family: 'Dela Gothic One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 120px;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.planet-bg {
+    position: relative;
+    margin: 200px auto 0;
+    width: 1000px;
+    height: 1000px;
+    border-radius: 999em;
+    background: rgba(28, 55, 64, 0.1);
+    box-shadow: inset 1px 1px 8px rgba(130, 220, 238, 0.7);
+}
+.planet-slogan {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    width: 900px;
+    height: 900px;
+    font-family: 'Noto Sans CJK TC';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 4.5px;
+    line-height: 48px;
+}
+
+.planet-slogan path { 
+    fill: none; 
+}
+.planet-slogan svg {
+    display: block;
+    overflow: visible;
+}
+.planet-slogan textPath {
+    fill: #F5FFFF; 
+}
+.planet {
+    position: relative;
+    margin-top: 60px;
+    height: 1080px;
+}
+.planet-01,
+.planet-02,
+.planet-03 {
+    position: absolute;
+    top: 85px;
+    left: calc(50% - 450px);
+}
+
+/* 區塊三 */
+.block-two {
+    margin-top: 130px;
+}
+.conversation-01 {
+    opacity: 0;
+    margin: 60px 0 0 160px;
+}
+.conversation-02 {
+    opacity: 0;
+    margin: 60px 0 0 330px;
+}
+.conversation-03 {
+    opacity: 0;
+    margin: 60px 0 0 160px;
+}
+.conversation-04 {
+    opacity: 0;
+    margin: 60px 0 0 330px;
+}
+.ui-icon,
+.frontend-icon {
+    float: left;
+    width: 180px;
+    height: 140px;
+}
+.ui-icon {
+    background: url('/image/astronaut_UI.png') no-repeat;
+}
+.frontend-icon {
+    background: url('/image/astronaut_FE.png') no-repeat;
+}
+
+.conversation-text {
+    float: left;
+    margin: 42px 0 0 40px;
+    font-family: 'Noto Sans CJK TC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 56px;
+}
+.topic {
+   
+}
+.topic-title {
+    margin: 0;
+    font-family: 'Noto Sans CJK TC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 200px;
+    background: linear-gradient(to top, #FFC630 5.35%, #FFF5D7 54.45%, #41AAA0 96.53%);
+    background: -webkit-linear-gradient(to top, #FFC630 5.35%, #FFF5D7 54.45%, #41AAA0 96.53%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: AnimeGrade 10s ease infinite;
+}
+.topic-content {
+    margin: 0;
+    font-family: 'Noto Sans CJK TC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 60px;
+}
+
+@keyframes scroll {
+    from {transform: translateX(100%)}
+    to {transform: translateX(-100%)}
+}
+  
+@keyframes scroll2 {
+    from {transform: translateX(0%)}
+    to {transform: translateX(-200%)}
+}
+  
+.billboard-01 {
+    
+}
+.billboard-wrapper {
+    float: left;
+    animation: scroll 40s linear infinite;
+    
+}
+.billboard-wrapper:nth-child(2) {
+    animation: scroll2 40s linear infinite;
+    animation-delay: -20s;
+}
+.billboard-text {
+    margin: 0 10px;
+    float: left;
+}
+  
